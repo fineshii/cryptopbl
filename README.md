@@ -1,0 +1,1 @@
+A visual cryptography project
