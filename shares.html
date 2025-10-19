@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select Shares</title>
+</head>
+<body>
+  <h2>Select {{ k }} shares to reconstruct</h2>
+  <form method="POST" action="/reconstruct">
+    {% for i in range(1, n+1) %}
+      <input type="checkbox" name="shares" value="share_{{ i }}.png"> Share {{ i }}<br>
+    {% endfor %}
+    <button type="submit">Reconstruct</button>
+  </form>
+</body>
+</html>
